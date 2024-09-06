@@ -1,0 +1,26 @@
+1 Alert version 
+The pigpio library(https://abyz.me.uk/rpi/pigpio/) is used in Send_Alert65BPap.c 
+and Receive_Alert65BPap.c . You can easily to install pigpio library 
+using apt in raspberry pi. 
+
+2 Poling version
+You need to install BCM2835, if you want to use SendBCM2835Pap.c 
+and ReceiveBCM2835Pap.c .
+
+a. Download bcm2835/bcm2835-1.75.tar.gz  or newer from
+   https://www.airspayce.com/mikem/bcm2835/index.html
+
+b. Install automke
+   sudo apt install automake
+
+c. Compile the bcm2835-1.75 
+   tar zxvf bcm2835-1.75.tar.gz
+   cd bcm2835-1.75 
+   ./configure
+   make
+   sudo make install
+
+3. Compile Programs
+Send_Alert65BPap.c Receive_Alert65BPap.c SendBCM2835Pap.c and ReceiveBCM2835Pap.c
+are easily compiled using "make". 
+
