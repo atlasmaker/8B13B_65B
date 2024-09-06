@@ -1,0 +1,192 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 368 464)
+	(text "ClockBridge" (rect 149 -1 196 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 448 20 460)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clock_bridge_0_in_clk_clk" (rect 0 0 105 12)(font "Arial" (font_size 8)))
+		(text "clock_bridge_0_in_clk_clk" (rect 4 61 154 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 144 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "clock_bridge_2_in_clk_clk" (rect 0 0 105 12)(font "Arial" (font_size 8)))
+		(text "clock_bridge_2_in_clk_clk" (rect 4 101 154 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 144 112)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "pll_0_refclk_clk" (rect 0 0 62 12)(font "Arial" (font_size 8)))
+		(text "pll_0_refclk_clk" (rect 4 141 100 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 144 152)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "pll_0_reset_reset" (rect 0 0 69 12)(font "Arial" (font_size 8)))
+		(text "pll_0_reset_reset" (rect 4 181 106 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 144 192)(line_width 1))
+	)
+	(port
+		(pt 368 72)
+		(output)
+		(text "clock_bridge_0_out_clk_clk" (rect 0 0 110 12)(font "Arial" (font_size 8)))
+		(text "clock_bridge_0_out_clk_clk" (rect 229 61 385 72)(font "Arial" (font_size 8)))
+		(line (pt 368 72)(pt 208 72)(line_width 1))
+	)
+	(port
+		(pt 368 112)
+		(output)
+		(text "clock_bridge_0_out_clk_1_clk" (rect 0 0 120 12)(font "Arial" (font_size 8)))
+		(text "clock_bridge_0_out_clk_1_clk" (rect 218 101 386 112)(font "Arial" (font_size 8)))
+		(line (pt 368 112)(pt 208 112)(line_width 1))
+	)
+	(port
+		(pt 368 152)
+		(output)
+		(text "clock_bridge_0_out_clk_2_clk" (rect 0 0 121 12)(font "Arial" (font_size 8)))
+		(text "clock_bridge_0_out_clk_2_clk" (rect 216 141 384 152)(font "Arial" (font_size 8)))
+		(line (pt 368 152)(pt 208 152)(line_width 1))
+	)
+	(port
+		(pt 368 192)
+		(output)
+		(text "clock_bridge_0_out_clk_3_clk" (rect 0 0 121 12)(font "Arial" (font_size 8)))
+		(text "clock_bridge_0_out_clk_3_clk" (rect 216 181 384 192)(font "Arial" (font_size 8)))
+		(line (pt 368 192)(pt 208 192)(line_width 1))
+	)
+	(port
+		(pt 368 232)
+		(output)
+		(text "clock_bridge_1_out_clk_clk" (rect 0 0 109 12)(font "Arial" (font_size 8)))
+		(text "clock_bridge_1_out_clk_clk" (rect 231 221 387 232)(font "Arial" (font_size 8)))
+		(line (pt 368 232)(pt 208 232)(line_width 1))
+	)
+	(port
+		(pt 368 272)
+		(output)
+		(text "clock_bridge_1_out_clk_1_clk" (rect 0 0 119 12)(font "Arial" (font_size 8)))
+		(text "clock_bridge_1_out_clk_1_clk" (rect 220 261 388 272)(font "Arial" (font_size 8)))
+		(line (pt 368 272)(pt 208 272)(line_width 1))
+	)
+	(port
+		(pt 368 312)
+		(output)
+		(text "clock_bridge_1_out_clk_2_clk" (rect 0 0 120 12)(font "Arial" (font_size 8)))
+		(text "clock_bridge_1_out_clk_2_clk" (rect 218 301 386 312)(font "Arial" (font_size 8)))
+		(line (pt 368 312)(pt 208 312)(line_width 1))
+	)
+	(port
+		(pt 368 352)
+		(output)
+		(text "clock_bridge_1_out_clk_3_clk" (rect 0 0 120 12)(font "Arial" (font_size 8)))
+		(text "clock_bridge_1_out_clk_3_clk" (rect 218 341 386 352)(font "Arial" (font_size 8)))
+		(line (pt 368 352)(pt 208 352)(line_width 1))
+	)
+	(port
+		(pt 368 392)
+		(output)
+		(text "clock_bridge_2_out_clk_clk" (rect 0 0 110 12)(font "Arial" (font_size 8)))
+		(text "clock_bridge_2_out_clk_clk" (rect 229 381 385 392)(font "Arial" (font_size 8)))
+		(line (pt 368 392)(pt 208 392)(line_width 1))
+	)
+	(port
+		(pt 368 432)
+		(output)
+		(text "pll_0_locked_export" (rect 0 0 79 12)(font "Arial" (font_size 8)))
+		(text "pll_0_locked_export" (rect 267 421 381 432)(font "Arial" (font_size 8)))
+		(line (pt 368 432)(pt 208 432)(line_width 1))
+	)
+	(drawing
+		(text "clock_bridge_0_in_clk" (rect 15 43 156 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 149 67 316 144)(font "Arial" (color 0 0 0)))
+		(text "clock_bridge_0_out_clk" (rect 209 43 550 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 193 67 404 144)(font "Arial" (color 0 0 0)))
+		(text "clock_bridge_0_out_clk_1" (rect 209 83 562 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 193 107 404 224)(font "Arial" (color 0 0 0)))
+		(text "clock_bridge_0_out_clk_2" (rect 209 123 562 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 193 147 404 304)(font "Arial" (color 0 0 0)))
+		(text "clock_bridge_0_out_clk_3" (rect 209 163 562 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 193 187 404 384)(font "Arial" (color 0 0 0)))
+		(text "clock_bridge_1_out_clk" (rect 209 203 550 419)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 193 227 404 464)(font "Arial" (color 0 0 0)))
+		(text "clock_bridge_1_out_clk_1" (rect 209 243 562 499)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 193 267 404 544)(font "Arial" (color 0 0 0)))
+		(text "clock_bridge_1_out_clk_2" (rect 209 283 562 579)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 193 307 404 624)(font "Arial" (color 0 0 0)))
+		(text "clock_bridge_1_out_clk_3" (rect 209 323 562 659)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 193 347 404 704)(font "Arial" (color 0 0 0)))
+		(text "clock_bridge_2_in_clk" (rect 15 83 156 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 149 107 316 224)(font "Arial" (color 0 0 0)))
+		(text "clock_bridge_2_out_clk" (rect 209 363 550 739)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 193 387 404 784)(font "Arial" (color 0 0 0)))
+		(text "pll_0_locked" (rect 209 403 490 819)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 178 427 392 864)(font "Arial" (color 0 0 0)))
+		(text "pll_0_refclk" (rect 76 123 224 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 149 147 316 304)(font "Arial" (color 0 0 0)))
+		(text "pll_0_reset" (rect 79 163 224 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 149 187 328 384)(font "Arial" (color 0 0 0)))
+		(text " ClockBridge " (rect 314 448 706 906)(font "Arial" ))
+		(line (pt 144 32)(pt 208 32)(line_width 1))
+		(line (pt 208 32)(pt 208 448)(line_width 1))
+		(line (pt 144 448)(pt 208 448)(line_width 1))
+		(line (pt 144 32)(pt 144 448)(line_width 1))
+		(line (pt 145 52)(pt 145 76)(line_width 1))
+		(line (pt 146 52)(pt 146 76)(line_width 1))
+		(line (pt 207 52)(pt 207 76)(line_width 1))
+		(line (pt 206 52)(pt 206 76)(line_width 1))
+		(line (pt 207 92)(pt 207 116)(line_width 1))
+		(line (pt 206 92)(pt 206 116)(line_width 1))
+		(line (pt 207 132)(pt 207 156)(line_width 1))
+		(line (pt 206 132)(pt 206 156)(line_width 1))
+		(line (pt 207 172)(pt 207 196)(line_width 1))
+		(line (pt 206 172)(pt 206 196)(line_width 1))
+		(line (pt 207 212)(pt 207 236)(line_width 1))
+		(line (pt 206 212)(pt 206 236)(line_width 1))
+		(line (pt 207 252)(pt 207 276)(line_width 1))
+		(line (pt 206 252)(pt 206 276)(line_width 1))
+		(line (pt 207 292)(pt 207 316)(line_width 1))
+		(line (pt 206 292)(pt 206 316)(line_width 1))
+		(line (pt 207 332)(pt 207 356)(line_width 1))
+		(line (pt 206 332)(pt 206 356)(line_width 1))
+		(line (pt 145 92)(pt 145 116)(line_width 1))
+		(line (pt 146 92)(pt 146 116)(line_width 1))
+		(line (pt 207 372)(pt 207 396)(line_width 1))
+		(line (pt 206 372)(pt 206 396)(line_width 1))
+		(line (pt 207 412)(pt 207 436)(line_width 1))
+		(line (pt 206 412)(pt 206 436)(line_width 1))
+		(line (pt 145 132)(pt 145 156)(line_width 1))
+		(line (pt 146 132)(pt 146 156)(line_width 1))
+		(line (pt 145 172)(pt 145 196)(line_width 1))
+		(line (pt 146 172)(pt 146 196)(line_width 1))
+		(line (pt 0 0)(pt 368 0)(line_width 1))
+		(line (pt 368 0)(pt 368 464)(line_width 1))
+		(line (pt 0 464)(pt 368 464)(line_width 1))
+		(line (pt 0 0)(pt 0 464)(line_width 1))
+	)
+)

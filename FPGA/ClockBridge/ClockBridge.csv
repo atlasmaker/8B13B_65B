@@ -1,0 +1,18 @@
+# system info ClockBridge on 2024.09.05.14:07:57
+system_info:
+name,value
+DEVICE,5CSEMA4U23C6
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1725512862
+#
+#
+# Files generated for ClockBridge on 2024.09.05.14:07:57
+files:
+filepath,kind,attributes,module,is_top
+simulation/ClockBridge.v,VERILOG,,ClockBridge,true
+simulation/submodules/ClockBridge_pll_0.vo,VERILOG,,ClockBridge_pll_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ClockBridge.pll_0,ClockBridge_pll_0

@@ -1,0 +1,86 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\Users\Administrator\Desktop\8B13B_CRC_DLL16_65_10u_FullDuplexPre\ClockBridge.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=C:\Users\Administrator\Desktop\8B13B_CRC_DLL16_65_10u_FullDuplexPre\ClockBridge\simulation --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading 8B13B_CRC_DLL16_65_10u_FullDuplexPre/ClockBridge.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 23.1]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding clock_bridge_1 [altera_clock_bridge 23.1]
+Progress: Parameterizing module clock_bridge_1
+Progress: Adding clock_bridge_2 [altera_clock_bridge 23.1]
+Progress: Parameterizing module clock_bridge_2
+Progress: Adding pll_0 [altera_pll 23.1]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ClockBridge.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: ClockBridge.pll_0: Able to implement PLL with user settings
+Info: ClockBridge: Generating ClockBridge "ClockBridge" for SIM_VERILOG
+Info: pll_0: Generating simgen model
+Info: pll_0: Info: ******************************************************************* Info: Running Quartus Prime Shell     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition     Info: Copyright (C) 2023  Intel Corporation. All rights reserved.     Info: Your use of Intel Corporation's design tools, logic functions      Info: and other software and tools, and any partner logic      Info: functions, and any output files from any of the foregoing      Info: (including device programming or simulation files), and any      Info: associated documentation or information are expressly subject      Info: to the terms and conditions of the Intel Program License      Info: Subscription Agreement, the Intel Quartus Prime License Agreement,     Info: the Intel FPGA IP License Agreement, or other applicable license     Info: agreement, including, without limitation, that your use is for     Info: the sole purpose of programming logic devices manufactured by     Info: Intel and sold by Intel or its authorized distributors.  Please     Info: refer to the applicable agreement for further details, at     Info: https://fpgasoftware.intel.com/eula.     Info: Processing started: Thu Sep  5 12:28:28 2024 Info: Command: quartus_sh -t run_simgen_cmd.tcl Info: ******************************************************************* Info: Running Quartus Prime Analysis & Synthesis     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition     Info: Copyright (C) 2023  Intel Corporation. All rights reserved.     Info: Your use of Intel Corporation's design tools, logic functions      Info: and other software and tools, and any partner logic      Info: functions, and any output files from any of the foregoing      Info: (including device programming or simulation files), and any      Info: associated documentation or information are expressly subject      Info: to the terms and conditions of the Intel Program License      Info: Subscription Agreement, the Intel Quartus Prime License Agreement,     Info: the Intel FPGA IP License Agreement, or other applicable license     Info: agreement, including, without limitation, that your use is for     Info: the sole purpose of programming logic devices manufactured by     Info: Intel and sold by Intel or its authorized distributors.  Please     Info: refer to the applicable agreement for further details, at     Info: https://fpgasoftware.intel.com/eula.     Info: Processing started: Thu Sep  5 12:28:29 2024 Info: Command: quartus_map ClockBridge_pll_0.qpf --simgen --ini=disable_check_quartus_compatibility_qsys_only=on --simgen_parameter=CBX_HDL_LANGUAGE=VERILOG Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set. Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance. Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected Info (12021): Found 1 design units, including 1 entities, in source file clockbridge_pll_0.v     Info (12023): Found entity 1: ClockBridge_pll_0 File: C:/Users/Administrator/AppData/Local/Temp/alt9971_4530102760621329916.dir/0002_pll_0_gen/ClockBridge_pll_0.v Line: 2 Info (12127): Elaborating entity "ClockBridge_pll_0" for the top level hierarchy Info (12128): Elaborating entity "altera_pll" for hierarchy "altera_pll:altera_pll_i" File: C:/Users/Administrator/AppData/Local/Temp/alt9971_4530102760621329916.dir/0002_pll_0_gen/ClockBridge_pll_0.v Line: 85 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus Info (12130): Elaborated megafunction instantiation "altera_pll:altera_pll_i" File: C:/Users/Administrator/AppData/Local/Temp/alt9971_4530102760621329916.dir/0002_pll_0_gen/ClockBridge_pll_0.v Line: 85 Info (12133): Instantiated megafunction "altera_pll:altera_pll_i" with the following parameter: File: C:/Users/Administrator/AppData/Local/Temp/alt9971_4530102760621329916.dir/0002_pll_0_gen/ClockBridge_pll_0.v Line: 85     Info (12134): Parameter "fractional_vco_multiplier" = "false"     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"     Info (12134): Parameter "operation_mode" = "normal"     Info (12134): Parameter "number_of_clocks" = "1"     Info (12134): Parameter "output_clock_frequency0" = "100.000000 MHz"     Info (12134): Parameter "phase_shift0" = "0 ps"     Info (12134): Parameter "duty_cycle0" = "50"     Info (12134): Parameter "output_clock_frequency1" = "0 MHz"     Info (12134): Parameter "phase_shift1" = "0 ps"     Info (12134): Parameter "duty_cycle1" = "50"     Info (12134): Parameter "output_clock_frequency2" = "0 MHz"     Info (12134): Parameter "phase_shift2" = "0 ps"     Info (12134): Parameter "duty_cycle2" = "50"     Info (12134): Parameter "output_clock_frequency3" = "0 MHz"     Info (12134): Parameter "phase_shift3" = "0 ps"     Info (12134): Parameter "duty_cycle3" = "50"     Info (12134): Parameter "output_clock_frequency4" = "0 MHz"     Info (12134): Parameter "phase_shift4" = "0 ps"     Info (12134): Parameter "duty_cycle4" = "50"     Info (12134): Parameter "output_clock_frequency5" = "0 MHz"     Info (12134): Parameter "phase_shift5" = "0 ps"     Info (12134): Parameter "duty_cycle5" = "50"     Info (12134): Parameter "output_clock_frequency6" = "0 MHz"     Info (12134): Parameter "phase_shift6" = "0 ps"     Info (12134): Parameter "duty_cycle6" = "50"     Info (12134): Parameter "output_clock_frequency7" = "0 MHz"     Info (12134): Parameter "phase_shift7" = "0 ps"     Info (12134): Parameter "duty_cycle7" = "50"     Info (12134): Parameter "output_clock_frequency8" = "0 MHz"     Info (12134): Parameter "phase_shift8" = "0 ps"     Info (12134): Parameter "duty_cycle8" = "50"     Info (12134): Parameter "output_clock_frequency9" = "0 MHz"     Info (12134): Parameter "phase_shift9" = "0 ps"     Info (12134): Parameter "duty_cycle9" = "50"     Info (12134): Parameter "output_clock_frequency10" = "0 MHz"     Info (12134): Parameter "phase_shift10" = "0 ps"     Info (12134): Parameter "duty_cycle10" = "50"     Info (12134): Parameter "output_clock_frequency11" = "0 MHz"     Info (12134): Parameter "phase_shift11" = "0 ps"     Info (12134): Parameter "duty_cycle11" = "50"     Info (12134): Parameter "output_clock_frequency12" = "0 MHz"     Info (12134): Parameter "phase_shift12" = "0 ps"     Info (12134): Parameter "duty_cycle12" = "50"     Info (12134): Parameter "output_clock_frequency13" = "0 MHz"     Info (12134): Parameter "phase_shift13" = "0 ps"     Info (12134): Parameter "duty_cycle13" = "50"     Info (12134): Parameter "output_clock_frequency14" = "0 MHz"     Info (12134): Parameter "phase_shift14" = "0 ps"     Info (12134): Parameter "duty_cycle14" = "50"     Info (12134): Parameter "output_clock_frequency15" = "0 MHz"     Info (12134): Parameter "phase_shift15" = "0 ps"     Info (12134): Parameter "duty_cycle15" = "50"     Info (12134): Parameter "output_clock_frequency16" = "0 MHz"     Info (12134): Parameter "phase_shift16" = "0 ps"     Info (12134): Parameter "duty_cycle16" = "50"     Info (12134): Parameter "output_clock_frequency17" = "0 MHz"     Info (12134): Parameter "phase_shift17" = "0 ps"     Info (12134): Parameter "duty_cycle17" = "50"     Info (12134): Parameter "pll_type" = "General"     Info (12134): Parameter "pll_subtype" = "General" Info (281010): Generating sgate simulator netlist using Simgen SIMGEN_PROGRESS Start of Model generation -- 0% complete SIMGEN_PROGRESS Phase 1 : Internal Objects created -- 25% complete SIMGEN_PROGRESS Phase 2 : Connections between internal objects made -- 60% complete SIMGEN_PROGRESS Phase 3 : Netlist generated -- 100% complete Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning     Info: Peak virtual memory: 4783 megabytes     Info: Processing ended: Thu Sep  5 12:28:38 2024     Info: Elapsed time: 00:00:09     Info: Total CPU time (on all processors): 00:00:01 Info (23030): Evaluation of Tcl script run_simgen_cmd.tcl was successful Info: Quartus Prime Shell was successful. 0 errors, 0 warnings     Info: Peak virtual memory: 4660 megabytes     Info: Processing ended: Thu Sep  5 12:28:38 2024     Info: Elapsed time: 00:00:10     Info: Total CPU time (on all processors): 00:00:01
+Info: pll_0: Simgen was successful
+Info: pll_0: "ClockBridge" instantiated altera_pll "pll_0"
+Info: ClockBridge: Done "ClockBridge" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\Users\Administrator\Desktop\8B13B_CRC_DLL16_65_10u_FullDuplexPre\ClockBridge\ClockBridge.spd --output-directory=C:/Users/Administrator/Desktop/8B13B_CRC_DLL16_65_10u_FullDuplexPre/ClockBridge/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\Administrator\Desktop\8B13B_CRC_DLL16_65_10u_FullDuplexPre\ClockBridge\ClockBridge.spd --output-directory=C:/Users/Administrator/Desktop/8B13B_CRC_DLL16_65_10u_FullDuplexPre/ClockBridge/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/Administrator/Desktop/8B13B_CRC_DLL16_65_10u_FullDuplexPre/ClockBridge/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/Administrator/Desktop/8B13B_CRC_DLL16_65_10u_FullDuplexPre/ClockBridge/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/Administrator/Desktop/8B13B_CRC_DLL16_65_10u_FullDuplexPre/ClockBridge/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\Administrator\Desktop\8B13B_CRC_DLL16_65_10u_FullDuplexPre\ClockBridge.qsys --block-symbol-file --output-directory=C:\Users\Administrator\Desktop\8B13B_CRC_DLL16_65_10u_FullDuplexPre\ClockBridge --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading 8B13B_CRC_DLL16_65_10u_FullDuplexPre/ClockBridge.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 23.1]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding clock_bridge_1 [altera_clock_bridge 23.1]
+Progress: Parameterizing module clock_bridge_1
+Progress: Adding clock_bridge_2 [altera_clock_bridge 23.1]
+Progress: Parameterizing module clock_bridge_2
+Progress: Adding pll_0 [altera_pll 23.1]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ClockBridge.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: ClockBridge.pll_0: Able to implement PLL with user settings
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Administrator\Desktop\8B13B_CRC_DLL16_65_10u_FullDuplexPre\ClockBridge.qsys --synthesis=VERILOG --output-directory=C:\Users\Administrator\Desktop\8B13B_CRC_DLL16_65_10u_FullDuplexPre\ClockBridge\synthesis --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading 8B13B_CRC_DLL16_65_10u_FullDuplexPre/ClockBridge.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 23.1]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding clock_bridge_1 [altera_clock_bridge 23.1]
+Progress: Parameterizing module clock_bridge_1
+Progress: Adding clock_bridge_2 [altera_clock_bridge 23.1]
+Progress: Parameterizing module clock_bridge_2
+Progress: Adding pll_0 [altera_pll 23.1]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ClockBridge.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: ClockBridge.pll_0: Able to implement PLL with user settings
+Info: ClockBridge: Generating ClockBridge "ClockBridge" for QUARTUS_SYNTH
+Info: pll_0: "ClockBridge" instantiated altera_pll "pll_0"
+Info: ClockBridge: Done "ClockBridge" with 2 modules, 3 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

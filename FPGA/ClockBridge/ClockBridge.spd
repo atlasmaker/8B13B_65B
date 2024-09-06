@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/ClockBridge_pll_0.vo"
+   type="VERILOG"
+   library="pll_0" />
+ <file path="simulation/ClockBridge.v" type="VERILOG" />
+ <topLevel name="ClockBridge" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

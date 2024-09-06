@@ -1,0 +1,19 @@
+	component ClockBridge is
+		port (
+			clock_bridge_0_in_clk_clk    : in  std_logic := 'X'; -- clk
+			clock_bridge_0_out_clk_clk   : out std_logic;        -- clk
+			clock_bridge_0_out_clk_1_clk : out std_logic;        -- clk
+			clock_bridge_0_out_clk_2_clk : out std_logic;        -- clk
+			clock_bridge_0_out_clk_3_clk : out std_logic;        -- clk
+			clock_bridge_1_out_clk_clk   : out std_logic;        -- clk
+			clock_bridge_1_out_clk_1_clk : out std_logic;        -- clk
+			clock_bridge_1_out_clk_2_clk : out std_logic;        -- clk
+			clock_bridge_1_out_clk_3_clk : out std_logic;        -- clk
+			clock_bridge_2_in_clk_clk    : in  std_logic := 'X'; -- clk
+			clock_bridge_2_out_clk_clk   : out std_logic;        -- clk
+			pll_0_locked_export          : out std_logic;        -- export
+			pll_0_refclk_clk             : in  std_logic := 'X'; -- clk
+			pll_0_reset_reset            : in  std_logic := 'X'  -- reset
+		);
+	end component ClockBridge;
+
