@@ -453,7 +453,7 @@ output bits_out;
 reg [`U8B13B_BITLENGTH_MSB:0] serial_data,serial_data_q;//
 reg [`U8B13B_DATABITLENGTH_MSB:0] data_body,data_body_q,data_body_crc,data_body_crc_q;//447:0
 reg [`U8B13B_SEGMENT_MSB:0] seg,seg2;
-reg [`U8B13B_DATALENGTH_MSB:0] data_store,data_store_q; //255:0
+reg [`U8B13B_DATALENGTH_MSB:0] data_store,data_store_q, data_keep ; //255:0
 reg [4:0] status,status_q;
 reg busy, strobe;
 reg [15:0] preamble;
@@ -544,6 +544,7 @@ end
 endcase
 end
 
+always @(negedge ck) begin data_keep <= data; end
 
 always @(negedge  system_clock)  begin
 serial_data_q<=serial_data;
@@ -597,7 +598,8 @@ end
 `U8B13B_CREATE_PREAMBLE_SHIFT: begin	
 	serial_data<=serial_data_q<< (`U8B13B_BITLENGTH-(`NUM_PREAMBLE+`NUM_STARTBIT)) ;
 	pt<=10'd`U8B13B_DATALENGTH ;
-	data_store<=data;
+	//data_store<=data;
+	data_store<=data_keep;
 	data_body    <=`U8B13B_DATABITLENGTH'd0;
 	data_body_crc<=`U8B13B_DATABITLENGTH'd0;
 	status <=`U8B13B_CREATE_BODY;
