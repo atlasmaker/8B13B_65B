@@ -443,7 +443,7 @@ endmodule
 
 
 //////////////////////////////////////////
-module CreatePacket(data,serial_data,system_clock,ck,start,active,busy,strobe,bits_out);
+module Serializer(data,serial_data,system_clock,ck,start,active,busy,strobe,bits_out);
 input [`U8B13B_DATALENGTH_MSB:0] data; //255:0
 input ck,start,active;
 input system_clock;
@@ -1430,7 +1430,7 @@ Divider8 ID_DIV4_SEND (.clk(ClockPLL3),.sig(base_clk_send)); //BaseClock
 
 //CLOCK_CH ID0 (ClockPLL0 ,op);
 
-CreatePacket ID1(
+Serializer ID1(
 .data(data_reg), 
 .serial_data(createpacket_serial_data),
 .system_clock(SysClock3),
