@@ -8,7 +8,13 @@
 #define SERIALSIZE 4
 #define PI_CE 0 // CS
 #define  CLOCK_SPEED  3500000      //SPI SCLK 
+/*
 
+You need to install pigpio, if you use this program.
+
+sudo apt install pigpio
+
+*/
 unsigned char data_rx[PACKETSIZE+5]={};
 unsigned char buf65[PACKETSIZE+5];
 unsigned int CNT=0;
