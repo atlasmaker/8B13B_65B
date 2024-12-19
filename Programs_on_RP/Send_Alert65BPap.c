@@ -4,6 +4,14 @@
 #include <unistd.h>
 #include <pigpio.h>
 #include <string.h>
+
+/*
+You need to install pigpio, if you use this program.
+
+sudo apt install pigpio
+
+*/
+
 #define PACKETSIZE 65
 #define SERIALSIZE 4
 #define PI_CE   0 // CS
