@@ -11,13 +11,20 @@
 You neet to add below to /boot/config.txt and reboot, if you use this program.
   enable_uart=1
   core_freq=400 #PI3
-  dtoverlay=gpio-no-irq
-  arm_freq=1000 #PI3
-  arm_freq_min=1000 #PI3
+  core_freq=500 #PI4
+  dtoverlay=gpio-no-irq 
+  arm_freq=1000 #PI3 and PI4
+  arm_freq_min=1000 #PI3 and PI4
 
-If you don't write gpio-no-irq in config.txt and reboot, 
-raspberry pi will be hung up.
+
+When using BCM2835 library, "dtoverlay=gpio-no-irq" must be 
+written to avoid crashing your Raspberry Pi.
 https://www.airspayce.com/mikem/bcm2835/
+
+Timing must be considered when changing core_freq (see also 
+Timing Controller in DE0NanoSoc_TXRX.v). Changing core_freq 
+to a slower speed, the frequency of the SCLK in SPI will 
+be down. Therefore, the packet length becomes longer.
 ************************************/
 
 //https://www.airspayce.com/mikem/bcm2835/group__constants.html
